@@ -1,0 +1,19 @@
+header {
+  background-image: radial-gradient(circle 273px at 9.7% 50.7%, rgba(86, 204, 242, 1) 0%, rgba(47, 128, 237, 1) 90%);
+  color: white;
+  padding: 20px 0;
+}
+
+.input-field>label {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#title {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.outer-form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

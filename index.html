@@ -1,0 +1,157 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Web Design Certification on freecodecamp</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container center-align">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+    </div>
+  </header>
+
+  <div class="container outer-form">
+    <form id="survey-form" class="row" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name"
+              required>
+            <label id="name-label" for="name">Name *</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+            <label id="email-label" for="email">Email *</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age"
+              required>
+            <label id="number-label" for="number">Age *</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <select id="dropdown" name="currentPos">
+              <option value disabled selected>Select an option</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="dropdown">Which option best describes your current role?</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">* How likely is that you would recommend freeCodeCamp to a friend?</div>
+          <p class="col">
+            <label>
+              <input name="radio-buttons" value="1" type="radio" class="userRatings" />
+              <span>Definitely</span>
+            </label>
+          </p>
+          <p class="col">
+            <label>
+              <input name="radio-buttons" value="2" type="radio" class="userRatings" />
+              <span>Maybe</span>
+            </label>
+          </p>
+          <p class="col">
+            <label>
+              <input name="radio-buttons" value="3" type="radio" class="userRatings" />
+              <span>Not sure</span>
+            </label>
+          </p>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <select id="most-like" name="mostLike">
+              <option value disabled selected>Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="openSource">Open Source</option>
+            </select>
+            <label for="mostLike">What do you like most in FCC</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">Things that should be improved in the future (Check all that apply)</div>
+          <p class="col">
+            <label>
+              <input name="prefer" value="1" type="checkbox" />
+              <span>Front-end Projects</span>
+            </label>
+          </p>
+          <p class="col">
+            <label>
+              <input name="prefer" value="2" type="checkbox" />
+              <span>Back-end Projects</span>
+            </label>
+          </p>
+          <p class="col">
+            <label>
+              <input name="prefer" value="3" type="checkbox" />
+              <span>Data Visualization</span>
+            </label>
+          </p>
+          <p class="col">
+            <label>
+              <input name="prefer" value="4" type="checkbox" />
+              <span>Challenges</span>
+            </label>
+          </p>
+          <p class="col">
+            <label>
+              <input name="prefer" value="5" type="checkbox" />
+              <span>Open Source Community</span>
+            </label>
+          </p>
+          <p class="col">
+            <label>
+              <input name="prefer" value="6" type="checkbox" />
+              <span>Gitter help rooms</span>
+            </label>
+          </p>
+          <p class="col">
+            <label>
+              <input name="prefer" value="7" type="checkbox" />
+              <span>Additional Courses</span>
+            </label>
+          </p>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="comments" name="comment" class="materialize-textarea"
+              placeholder="Enter your comment here..."></textarea>
+            <label for="comments">Any Comments or Suggestions?</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <button id="submit" class="btn waves-effect waves-light btn-large blue" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>M.AutoInit();</script>
+
+</body>
+
+</html>
